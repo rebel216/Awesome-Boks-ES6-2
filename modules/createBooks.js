@@ -47,9 +47,9 @@ export default class BookObject {
     collection.style.border = '3px solid black';
   };
 
-  static storeLS = (book, id) => {
-    localStorage.setItem(id, JSON.stringify(book));
-  };
+    static storeLS = (book, id) => {
+      localStorage.setItem(id, JSON.stringify(book));
+    }
 
   static clearInputs = () => {
     document.querySelector('#title').value = '';
